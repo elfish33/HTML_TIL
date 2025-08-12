@@ -83,3 +83,6 @@
 * `<a href="#위치아이디명">틀릭요소</a>`
 * 다른 페이지의 특정 위치로 이동 시
 * `<a href="./login.html#search">틀릭요소</a>`
+## git 버전관리
+### gitHub 폴더 복제 방법
+* `git clone 주소붙여넣기`
