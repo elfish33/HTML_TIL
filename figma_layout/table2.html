@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>선불요금제 | KT</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="../style/reset.css">
+    <style>
+        #pay {
+            width: 1110px;
+            border-top: 2px solid #000;
+        }
+        #pay thead {
+            background-color: #FAFAFA;
+            border-bottom: 2px solid #555;
+            border-top: 2px solid #555;
+        }
+        #pay thead tr {}
+        #pay thead tr:nth-child(1) th {
+            padding-top: 30px; padding-bottom: 30px;
+        }
+        #pay thead tr:nth-child(2) th {
+            padding-top: 20px; padding-bottom: 20px;
+            font-size: 1.125rem; font-weight: 700; line-height: 150%;
+        }
+        #pay thead tr:nth-child(2) {border-top: 1px dashed #aaa;
+        }
+        #pay thead tr th {}
+        #pay thead tr th {
+            font-weight: 700;
+            font-size: 1.125rem;
+        }
+        
+        #pay thead tr th h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        #pay thead tr th p {
+            color: #777777;
+        }
+        #pay thead tr th span {
+            font-size: 0.875rem;
+            color: #777777;
+        }
+        #pay tbody {        }
+        #pay tbody tr {
+        }
+        #pay tbody tr th {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: 500;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+
+        #pay tbody tr td {
+            border-bottom: 1px solid #ddd;
+            font-weight: 500;
+            text-align: center;
+        }
+        #pay tbody tr td em.price {
+            color: #EE239B;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>행 & 열 합치기</h1>
+    <table id="test" style="border: 1px solid #000;">
+        <tr>
+            <!-- <td style="border: 1px solid #000" colspan="2">1</td>
+            <td>2</td> -->
+            <td>1</td>
+            <td rowspan="2" style="border: 1px solid #000">2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <!-- <td>4</td> -->
+        </tr>
+    </table>
+    <hr>
+    <table id="pay">
+        <thead>
+            <!-- head 1행 -->
+            <tr>
+                <th rowspan="2"><img src="./images/phone_img.png" alt=""></th>
+                <th colspan="4">
+                    <h2>선불요금제(국제전화)</h2>
+                    <p>합리적인 선불요금제에 국제전화 혜택을 더한 알뜰한 요금제!</p></th>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+            <!-- head 2행 -->
+            <tr>
+                <!-- <td></td> -->
+                <th>기본요금<br><span>(부가세 포함금액)</span></th>
+                <th>음성</th>
+                <th>문자</th>
+                <th>데이터</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- tbody 1행 -->
+            <tr>
+                <th>국제선불 300M</th>
+                <td><em class="price">40,700</em>원</td>
+                <td>집/이동전화 무제한(국제전화 매일20분)</td>
+                <td>기본제공</td>
+                <td>300MB+3Mbps</td>
+            </tr>
+            <!-- tbody 2행 -->
+            <tr>
+                <th>국제선불 300M</th>
+                <td><em class="price">40,700</em>원</td>
+                <td>집/이동전화 무제한(국제전화 매일20분)</td>
+                <td>기본제공</td>
+                <td>300MB+3Mbps</td>
+            </tr>
+            <!-- tbody 3행 -->
+            <tr>
+                <th>국제선불 300M</th>
+                <td><em class="price">40,700</em>원</td>
+                <td>집/이동전화 무제한(국제전화 매일20분)</td>
+                <td>기본제공</td>
+                <td>300MB+3Mbps</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
