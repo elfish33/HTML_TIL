@@ -116,8 +116,10 @@
 ### form - input
 * `<input type="종류" name="데이터명" id="데이터명(중복 x)" class="공통디자인명">`
 * `value` 속성은 필요한 경우만 작성, 쇼핑몰 수량 1 기본값
-## CSS MArgin & Padding 작성방법
+## CSS Margin & Padding 작성방법
 * `1px 2px 3px 4px` : 위 -> 오른 쪽 -> 아래 -> 왼쪽
 * `1px` : 상하좌우 값 동일
 * `1px 2px` : 상하(1) 좌우(2)
 * `1px 0 2px`: 상(1) 좌우(0) 하(2)
+* Margin 겹침현상 주의!
+
