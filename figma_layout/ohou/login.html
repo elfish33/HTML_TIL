@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | 오늘의 집</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+</head>
+<body>
+    <div id="wrap">
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="오늘의집"></a></h1>
+        <h1>로그인</h1>
+        <p>SNS 계정으로 간편하게 로그인</p>
+        <div class="sns">
+            <a href="#"><img src="./images/facebook.png" alt="페이스북으로 로그인하기"></a>
+            <a href="#"><img src="./images/kakao.png" alt="카카오로 로그인하기"></a>
+            <a href="#"><img src="./images/naver.png" alt="네이버로 로그인하기"></a>
+        </div>
+        <form action="#" method="post" id="login_frm">
+            <dl class="info">
+                <dt>아이디</dt>
+                <dd><input type="text" name="user_id" id="user_id" class="id_pwd" placeholder="아이디"></dd>
+                <dt>비밀번호</dt>
+                <dd><input type="password" name="user_pwd" id="user_pwd" class="id_pwd" placeholder="비밀번호"></dd>
+            </dl>
+            <p><button type="submit" id="login_btn">로그인</button></p>
+            <p>아이디가 없으신가요? <a href="./join.html">회원가입</a></p>
+        </form>
+    </div>
+</body>
+</html>

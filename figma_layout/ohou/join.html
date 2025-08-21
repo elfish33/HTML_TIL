@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 | 오늘의 집</title>
+    <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/join.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="오늘의집"></a></h1>
+        <h1>회원 가입</h1>
+        <p>SNS 계정으로 간편하게 회원가입</p>
+        <div class="sns">
+            <a href="#"><img src="./images/facebook.png" alt="페이스북으로 회원가입"></a>
+            <a href="#"><img src="./images/kakao.png" alt="카카오로 회원가입"></a>
+            <a href="#"><img src="./images/naver.png" alt="네이버로 회원가입"></a>
+        </div>
+        <form action="#" method="post" id="join_frm">
+            <fieldset class="contents"> 
+                <legend>가입정보</legend>
+                <dl class="info">
+                    <dt>이메일</dt>
+                    <dd><input type="text" name="user_id" id="user_id" class="id_pwd" placeholder="이메일"></dd>
+                    <span>@</span>
+                    <select name="eml_slc" id="eml_slc" placeholder="선택해주세요"> <!-- ??? -->
+                        <option>gmail.com</option>
+                        <option>naver.com</option>
+                    </select>
+                    <p><button type="submit">이메일 인증하기</button></p>
+                    <dt>비밀번호</dt>
+                    <dd>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력하세요.</dd>
+                    <dd><input type="password" name="user_pwd" id="user_pwd" class="id_pwd" placeholder="비밀번호"></dd>
+                    <dt>비밀번호확인</dt>
+                    <dd><input type="password" name="user_pwd" id="user_pwd" class="id_pwd" placeholder="비밀번호"></dd>
+                </dl>
+            </fieldset>
+            <fieldset class="law">
+                <legend>가입약관</legend>
+            </fieldset>
+            <p><button type="submit" id="join_btn">회원가입</button></p>
+            <p>이미 아이디가 있으신가요? <a href="./login.html">로그인</a></p>
+        </form>
+    </div>
+</body>
+</html>
