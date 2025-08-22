@@ -1,1 +1,22 @@
-hoho {}
+main {width: 440px;}
+main #top {}
+main #top h1 {}
+main #top p {}
+main #top p em {}
+main #top p em a {}
+main #top #sns {text-align: center;}
+main #top #sns #google_btn {}
+main #top #sns #google_btn a {}
+main #top #sns #google_btn a img {width: 30px; height: 30px;}
+main #top #sns a {}
+main #top #sns a img {}
+main #top span {}
+
+main #login_g {}
+main #login_g #login_frm {}
+main #login_g #login_frm dl {}
+main #login_g #login_frm dl dt {}
+main #login_g #login_frm dl dd {}
+main #login_g #login_frm dl dd .data_input {}
+main #login_g #login_frm p {}
+main #login_g #login_frm p #login_btn {}

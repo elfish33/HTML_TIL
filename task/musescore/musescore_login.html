@@ -13,6 +13,34 @@
     <link rel="stylesheet" href="./styles/musescore_login.css">
 </head>
 <body>
-    
+    <main>
+        <section id="top">
+            <h1>Log in to Musescore</h1>
+            <p>Don't have an account? <em><a href="#">Sign</a></em></p>
+
+            <div id="sns">
+                <div id="google_btn">
+                    <a href="#"><img src="./images/google_login.png" alt="">Continue with Google</a>
+                </div>
+                <a href="#"><img src="https://musescore.com/static/public/musescore/img/fb-login.svg" alt="Login with Facebook"></a>
+                <a href="#"><img src="https://musescore.com/static/public/musescore/img/apple-login.svg" alt="Login with Apple"></a>
+            </div>
+
+            <span>or</span>
+        </section>
+
+        <section id="login_g">
+            <form action="#" method="post" id="login_frm">
+                <dl>
+                    <dt>Email or username</dt>
+                    <dd><input type="email" name="eml_input" id="eml_input" class="data_input"></dd>
+                    <dt>Password</dt>
+                    <a href="#">Forgot your password?</a>
+                    <dd><input type="password" name="pwd_input" id="pwd_input" class="data_input"></dd>
+                </dl>
+                <p><button type="button" id="login_btn">Log in</p>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
