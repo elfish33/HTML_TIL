@@ -1,0 +1,19 @@
+#wrap .sns {
+    text-align: center; 
+    margin-top: 14px;}
+/* #wrap .sns a {display: inline-block; margin: 0 10px;} */
+#wrap .sns a:nth-child(2) {margin: 0 20px;}
+#wrap .sns a img {}
+#wrap #login_frm {}
+#wrap .info {}
+#wrap .info dt {font-size: 1.063rem; font-weight: 500; margin-bottom: 10px;}
+#wrap .info dd {margin-bottom: 22px;}
+#wrap .info dd input[name^=user] {
+    width: 100%; padding: 10px; 
+    background-color: #fff;
+    border: 1px solid #ddd;}
+#wrap .info #id_pwd {}
+#wrap .info #user_pwd {}
+#wrap #login_frm #login_btn {margin-bottom: 22px; padding: 15px 10px;}
+#wrap #login_frm > p {font-size: 0.875rem; text-align: center;}
+#wrap #login_frm > p a {font-weight: 600; text-decoration: underline;}
