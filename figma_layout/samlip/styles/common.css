@@ -3,9 +3,13 @@
     /* --대상-용도:반복속성값; */
     /* 글자 크기 */
     --text-title70:4.375rem; /* 70px */
+    --text-title40:2.5rem;
     --text-contents21:1.313rem;
     --text-gnb18:1.125rem;
+    --text-menu18: 1.125rem;
+    --text-subtitle14:0.875rem;
     --text-rgt_menu12:0.75rem;
+    --text-sub10:0.625rem;
     /* 행간 */
     --line-title:90%;
     --line-contents:150%;
@@ -16,27 +20,34 @@
     --weight-semibold:600;
     /* 색상 (border, background, color 등 될 수 있는 후보! */
     --color-white:#fff;
+    --color-grey4:#444;
+    --color-greya:#AAA;
+    --color-grayd: #ddd;
     --color-title_brown:#642c10;
     --color-title_drkblue:#1d356d;
     --color-title_drkred:#d43936;
-    --color-grey4:#444;
-    --color-greya:#AAA;
+    --color-point: #36B4E5;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
     --margin-desktop-l-r-80: 80px;
 }
+body,html {
+    scroll-behavior: smooth;
+}
 /* header 포함 공통 */
-body {} /* ??? */
-#wrap {}
+#wrap {padding-top: 92px;}
 #wrap header {
     /* width: 100%; 블록의 기본값이라 안 써도 돼!*/ 
     padding: 0 80px;
     height: 92px;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    position: relative; /* lnb 크기 & 위치 부모 기준 */
+    flex-flow: row nowrap; /* 메인축(수평) 줄바꿈안함 */
+    justify-content: space-between; /* 메인축 정렬(양쪽끝) */
+    align-items: center; /* 교차축(수직) 가운데 */
+    position: fixed; /* lnb 크기 & 위치 부모 기준 */ 
+    z-index: 900; /* чтобы не было перекрития */ left: 0; top: 0; /* снова задаем координаты, так как после fixed он забыл свое место */
+    width: 100%; /* fixed or absolute 너비값을 재설정해야한다! */
+    background: var(--color-white);
 }
 #wrap header h1 {}
 #wrap header h1 a {}
@@ -86,18 +97,12 @@ body {} /* ??? */
 #wrap header nav .gnb > li .lnb > li > a {
     font-size: var(--text-menu18);
     font-weight: var(--weight-semibold);
-    /* line-height: 80px; */
 }
-
-
-
 
 #wrap header .rgt_menu {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-
-
 }
 #wrap header .rgt_menu > li {
 }
