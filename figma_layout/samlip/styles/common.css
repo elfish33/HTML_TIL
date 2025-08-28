@@ -29,6 +29,7 @@
     --color-title_drkred:#d43936;
     --color-point: #36B4E5;
     --color-pointY: #f3c300;
+    --color-point--coral: #DA2128;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
     --width-desktop-1140: 1140px;
@@ -150,3 +151,67 @@ body,html {
 #wrap header .rgt_menu li:nth-child(2) .lang_select a.cn {}
 /* 메인 */
 #wrap main {}
+
+/* footer */
+#wrap footer {
+    background: var(--color-white);
+    padding: 54px 80px;
+}
+
+#wrap footer .ft_top {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+#wrap footer .ft_top .info {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    gap: 50px;
+}
+#wrap footer .ft_top .info a {}
+#wrap footer .ft_top .info a:first-child {color: var(--color-point);}
+#wrap footer .ft_top .info a:nth-child(2) {color: var(--color-point--coral) ;}
+#wrap footer .ft_top .info a img {}
+
+#wrap footer .ft_top .site_all {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    gap: 12px; padding: 10px;
+}
+#wrap footer .ft_top .site_all li {
+    border: 1px solid var(--color-grayd); 
+    position: relative;
+}
+#wrap footer .ft_top .site_all li p {
+    background-image: url(../images/footer_arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    line-height: 40px;
+    padding-left: 8px;
+}
+#wrap footer .ft_top .site_all li:nth-child(1) p {width: 220px;}
+/* hover */
+#wrap footer .ft_top .site_all li:nth-child(1):hover .family_list {display: block;}
+#wrap footer .ft_top .site_all li:nth-child(2) p {width: 140px;}
+
+#wrap footer .ft_top .site_all li .family_list {
+    display: none; /* 초기 숨기기 */
+    position: absolute; width: 100%;
+    bottom: 40px; height: 250px; overflow: auto;
+    background: var(--color-white);
+    border: 1px solid var(--color-grayd);
+} 
+#wrap footer .ft_top .site_all li .family_list li {
+    padding: 10px; border: none;
+}
+#wrap footer .ft_top .site_all li .family_list li a {}
+
+/* ------------------------------------배경 */
+#wrap footer .ft_top .site_all li .sitemap_wrap {display: none;} /* 초기 숨기기 */
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents {}
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents h2 {}
+/* ---------------------------------------------------------close button */
+#wrap footer .ft_top .site_all li .sitemap_wrap .sitemap_contents .close {}
+
+#wrap footer .ft_btm {}
+#wrap footer .ft_btm address {padding: 25px 0; line-height: var(--line-contents);}
+#wrap footer .ft_btm p {}
