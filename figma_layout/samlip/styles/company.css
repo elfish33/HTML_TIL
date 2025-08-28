@@ -1,0 +1,150 @@
+body {}
+#wrap {}
+#wrap main {}
+/* PATH */
+#wrap main .path {
+    width: 100%;
+    display: flex; flex-flow: row nowrap;
+    justify-content: end; 
+    padding: 10px 80px 10px 0; gap: 10px;
+}
+#wrap main .path a {
+    font: 0.75rem;
+    color: #808080;
+}
+#wrap main .path img {}
+#wrap main .path .current {
+    font: 0.75rem;
+    color: #676767;
+}
+/* 경영이념 */
+#wrap main > h2 {
+    font-size: 4.375rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 54px 0 41px;
+} 
+/* 반세기 역사 */
+#wrap main > h2+p {
+    font-size: 1.125rem;
+    color: #808080;
+    text-align: center;
+} 
+
+#wrap main .contents {
+    background-color: #FCFCFC;
+    text-align: center;
+    padding-top: 71px;
+} /* 주내용 */
+#wrap main .contents p {
+    font-size: 1.125rem;
+    color: #121212;
+    font-weight: 500;
+    line-height: 1.625;
+    margin-top: 26px;
+}
+#wrap main .contents p:nth-of-type(3) {
+    padding-bottom: 54px;
+}
+/* 모든 제목 (sky-blue) & border line 주기 */
+#wrap main .contents * h3 {
+    color: var(--color-point); font-size: 1.313rem;
+    letter-spacing: -.25px;
+    font-weight: 500;
+    width: var(--width-desktop-1140); margin: 0 auto;
+    border-top: 1px solid #ddd;
+    padding-top: 50px;
+}
+/* #wrap main .contents * h3::before {
+    content: ''; background: red;
+    width: 1140px; display: block; margin: 0 auto;
+} */
+
+/* padding 동시에 주기 */
+#wrap main .contents .vision2025 > p,
+#wrap main .contents .vision > p {padding-bottom: 50px;}
+#wrap main .contents .vision > p:last-child {padding-bottom: 30px;}
+
+/* VISION 2025 */
+#wrap main .contents .vision2025 {}
+#wrap main .contents .vision2025 > h3 {
+}
+#wrap main .contents .vision2025 > p {}
+/* VISION */
+#wrap main .contents .vision {}
+#wrap main .contents .vision > h3 {}
+#wrap main .contents .vision > h3+p {}
+/* GOALS */
+#wrap main .contents .goal {
+    padding-bottom: 50px;
+}
+#wrap main .contents .goal > h3 {
+    margin-bottom: 26px;
+}
+#wrap main .contents .goal ul {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+}
+#wrap main .contents .goal ul li {
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    text-align: center; line-height: 250px;
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: center; 
+    align-items: center;
+    margin-left: -20px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+}
+#wrap main .contents .goal ul li img {margin-bottom: 10px;}
+#wrap main .contents .goal ul li span {}
+/* 개별 GOALS */
+#wrap main .contents .goal .goal_list li:nth-child(1) {
+    color: #fff; background: var(--color-point);
+} /* First goal */
+#wrap main .contents .goal .goal_list li:nth-child(2) {
+    background: var(--color-white);
+} /* Second goal */
+#wrap main .contents .goal .goal_list li:nth-child(3) {
+    background: var(--color-pointY);color: var(--color-white);
+} /* Third goal */
+
+#wrap main .contents .goal .goal_list li:nth-child(1) img {filter: invert(1);} /* First goal image */
+#wrap main .contents .goal .goal_list li:nth-child(2) img {} /* Second goal image */
+#wrap main .contents .goal .goal_list li:nth-child(3) img {filter: invert(1);} /* Third goal image */
+
+/* STRATEGY */
+#wrap main .contents .strategy {
+    width: 1140px; margin: 0 auto;
+    padding-bottom: 50px;
+}
+#wrap main .contents .strategy h3 {
+    margin-bottom: 26px;
+}
+#wrap main .contents .strategy .strategy_list {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+}
+#wrap main .contents .strategy .strategy_list li {
+    width: 180px; height: 180px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    display: flex; flex-flow: column nowrap;
+    justify-content: flex-start; align-items: center;
+    padding: 50px 15px 0;
+    margin-left: -10px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1)
+}
+#wrap main .contents .strategy .strategy_list li h4 {
+    text-decoration: underline;
+    font-size: var(--text-menu18);
+    font-weight: var(--weight-semibold);
+    margin: 0 0 10px;
+}
+#wrap main .contents .strategy .strategy_list li > p {
+    color: #808080;
+    margin-top: 2px;
+    line-height: var(--line-contents);
+    font-weight: 400;
+    font-size:1rem;
+}

@@ -23,12 +23,15 @@
     --color-grey4:#444;
     --color-greya:#AAA;
     --color-grayd: #ddd;
+    --color--grayFCF: #FCFCFC;
     --color-title_brown:#642c10;
     --color-title_drkblue:#1d356d;
     --color-title_drkred:#d43936;
     --color-point: #36B4E5;
+    --color-pointY: #f3c300;
     /* 레이아웃 정보 */
     --width-desktop:1440px;
+    --width-desktop-1140: 1140px;
     --margin-desktop-l-r-80: 80px;
 }
 body,html {
