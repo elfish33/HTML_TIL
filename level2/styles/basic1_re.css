@@ -1,0 +1,25 @@
+/* 모바일 -> 태블릿 -> PC */
+/* Mobile 320 ~ 833 px #FFFF79*/
+/* Tablet 834~ 1199px #8BB9FF*/
+/* PC 1200 ~ max (100%) #FFC3D9*/
+
+/* mobile */
+body {background-color: #FFFF79;}
+main {width: 100%; min-width: 320px; padding: 0 15px; border: 2px solid red;}
+main h1 {font-weight: 700; font-size: 2rem;}
+main p {font-size: 0.875rem; line-height: 1.5;}
+
+/* tablet */
+@media screen and (min-width: 834px) {
+    body {background-color: #8BB9FF;}
+    main {padding: 0 30px;}
+    main h1 {font-size: 2.25rem;}
+    main p {font-size: 1rem;}
+}/* tablet @media ends */
+
+/* PC */
+@media screen and (min-width:1200px) {
+    body {background-color: #FFC3D9;}
+    main {width: 1200px; margin: 0 auto; padding: 0;}
+    main h1 {font-size: 2.625rem;}
+}/* PC @media ends */

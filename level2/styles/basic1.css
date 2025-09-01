@@ -1,0 +1,26 @@
+/* PC 1200 ~ max (100%) #FFC3D9*/
+
+/* Tablet 834~ 1199px #8BB9FF*/
+/* Mobile 320 ~ 833 px #FFFF79*/
+
+/* PC */
+body {background-color: #FFC3D9;}
+main {width: 1200px; min-width: 320px; margin: 0 auto; border: 2px solid blue;}
+main h1 {font-weight: 700; font-size: 2.625rem;}
+
+/* Tablet */
+/* @media screen and (규칙) {규칙 성립 시 실행되는 CSS 선택자와 속성값} */
+@media screen and (max-width: 1199px) {
+    /* 선택자 {속성: 값;} */
+    body {background-color: #8BB9FF;}
+    main {width: 100%; padding: 0 30px;} /* 기존 값에서 변화값만 작성 */
+    main h1 {font-size: 2.25rem;}
+}/* tablet @media end */
+
+/* Mobile */
+@media screen and (max-width: 833px) {
+    body {background-color: #FFFF79; }
+    main {width: 100%; padding: 0 15px;}
+    main h1 {font-size: 2rem;}
+    main p {font-size: 0.875rem;}
+}/* mobile @media end */

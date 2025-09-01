@@ -1,0 +1,30 @@
+/* tablet */
+@media screen and (max-width: 1199px) {
+    #wrap header .header_contents {padding: 0 20px; position: relative;}
+    #wrap main #slide_wrap {margin: 0 20px;}
+    #wrap main .info {margin: 0 20px; padding: 0 50px;}
+    #wrap main .info > a:nth-of-type(8),
+    #wrap main .info > a:nth-of-type(9) {display: none;}
+}/* 768~1199 */
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    #wrap header .header_contents > nav {display: none;}
+    #wrap header .header_contents .m_nav {display: block;}
+    #wrap header .header_contents .m_nav > nav {
+        background-color: grey;
+        position: absolute; top: 64px; right: 0;
+        width: 226px; 
+        /* height: 100vh; */ /* изначально задали, чтобы не было скролла и начиналось меню после хедера, но скролл появился */
+        /* калькулятор в CSS */
+        /* height: calc(값 연산자 값) */
+        height: calc(100vh - 64px); /* 서로 다른 단위를 계산할 때 사용하는 함수 calc() */
+        display: flex; flex-flow: column nowrap;
+        gap: 20px; align-items: center;
+        padding-top: 30px;
+        z-index: 500;}
+    #wrap main #slide_wrap {margin: 0; height: 268px;}
+    #wrap main .info {margin: 0; height: 130px; padding: 25px 16px;}
+    #wrap main .info a {width: 40px; height: 40px; line-height: 40px;}
+    #wrap main .info a:hover {width: 80px; height: 80px; line-height: 80px;}
+}/* 320~767 */
