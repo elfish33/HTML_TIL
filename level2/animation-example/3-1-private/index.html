@@ -8,6 +8,43 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="styles/animation.css">
+    <style>
+        header .right a {}
+        main {position: relative;}
+        main::before, 
+        main::after {
+            background: linear-gradient(90deg, rgb(9, 13, 43), transparent);
+            width: 15%; height: 100%;
+            content: ''; display: block;
+            position: absolute; z-index: 99; top: 0;
+            /* border: 1px solid yellow; */
+        }
+        main::before {left: 0;}
+        main::after {right: 0; transform: scaleX(-1);}
+        main > section, main > div {position: relative; z-index: 98}
+        .bg_wrap .bg1 {animation: bg_animation 100s ease-in-out infinite;}
+        .bg_wrap .bg2 {animation: bg_animation 40s ease-in-out infinite;}
+        .bg_wrap .bg3 {animation: bg_animation 20s ease-in-out infinite;}
+        .right a {color: #fff;}
+        .car #left_tire,
+        .car #right_tire {animation: tier_rotate 1s linear infinite;}
+
+        .scroll img {animation: scroll_up 1.3s linear alternate infinite;}
+
+        @keyframes tier_rotate {
+            0% {transform: rotate(0);}
+            100% {transform: rotate(-360deg);}
+        }
+
+        @keyframes scroll_up {
+            0% {transform: translateY(0);}
+            100% {transform: translateY(-30px);}
+        }
+        @keyframes bg_animation {
+            0% {background-position-x: 0;}
+            100% {background-position-x: 1000px;}
+        }
+    </style>
     <script>
         window.onload=function(){
 

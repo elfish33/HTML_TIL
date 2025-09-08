@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: #000; position: relative;}
+    h1, h2 {text-align: center;}
+    h1 {
+        font-family: 'Black Ops One';
+        font-size: 4.375rem;
+        font-weight: 700;
+        background: linear-gradient(90deg,rgba(123, 118, 222, 1) 0%, rgba(255, 115, 0, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+    h2 {
+        font-family: 'Black Ops One';
+        text-shadow:0 0 20px rgba(255,255,255,0.2);
+        font-size:10rem; text-align: center; font-weight:700; 
+        background-image: url(https://studio.pinotspalette.com/naperville/images/rut2.jpg);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+    span {
+        position: absolute;
+        animation: star_rotate 30s infinite;
+    }
+    .star1 {
+        background-image: url(./images/star.png);
+        width: 24px; height: 24px;
+        background-repeat: no-repeat;
+        top: 130px; left: 458px;}
+    .star2 {
+        background-image: url(./images/star.png);
+        width: 24px; height: 24px;
+        background-repeat: no-repeat;
+        top: 100px; right: 380px;
+    }
+    .star3 {
+        background-image: url(./images/star.png);
+        width: 24px; height: 24px;
+        background-repeat: no-repeat;
+        bottom: 100px; left: 21%;
+    }
+    .star4 {
+        background-image: url(./images/star.png);
+        width: 24px; height: 24px;
+        background-repeat: no-repeat;
+        top: 100px; right: 380px;
+    }
+    .star5 {
+        background-image: url(./images/star.png);
+        width: 24px; height: 24px;
+        background-repeat: no-repeat;
+        top: 95%; left: 85%;
+    }
+    .star6 {
+        background-image: url(./images/star.png);
+        width: 24px; height: 24px;
+        background-repeat: no-repeat;
+        bottom: 50%; left: 63%;
+    }
+    .star7 {
+        background-image: url(./images/star.png);
+        width: 24px; height: 24px;
+        background-repeat: no-repeat;
+        top: 100%; left: 40%;
+    }
+    .star8 {
+        background-image: url(./images/star.png);
+        width: 24px; height: 24px;
+        background-repeat: no-repeat;
+        top: 45%; left: 88%;
+    }
+    @keyframes star_rotate {
+        0% {rotate: 0;}
+        100% {rotate: 360deg;}
+    }
+    @keyframes text_gradient {
+        0% {background-position-x: 100%}
+        100% {background-position-x: 400%}
+    }
+</style>
+<body>
+    <!-- title -->
+    <h1 class="title creative">CREATIVE</h1>
+    <h2 class="title works">WORKS</h2>
+    <!-- stars -->
+    <div class="stars">
+    <span class="star1"></span>
+    <span class="star2"></span>
+    <span class="star3"></span>
+    <span class="star4"></span>
+    <span class="star5"></span>
+    <span class="star6"></span>
+    <span class="star7"></span>
+    <span class="star8"></span>
+    </div>
+</body>
+</html>

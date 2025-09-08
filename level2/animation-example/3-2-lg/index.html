@@ -41,7 +41,15 @@
         main .txt_bg_ani {
             background:url(images/bg_flow.png) repeat-x left top;
             height:150px; width:100%;
-            position:absolute; z-index:30;
+            position:absolute; z-index:15;
+            background-position-x: 0 0;
+            animation: bg_move 10s linear infinite;
+            transform: rotate(45deg);
+        }
+        
+        @keyframes bg_move {
+            0% {background-position-x: 0;}
+            100% {background-position-x: -200%;}
         }
     </style>
 </head>

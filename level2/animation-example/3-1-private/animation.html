@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .bg {
+            height: 100vh; background-color: lightyellow;
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/046/605/951/small_2x/sky-with-a-beautiful-sunset-a-blue-and-orange-sky-with-soft-clouds-a-sky-background-photo.jpg);
+            background-size: 200%; /* cover 쓰면 x */
+            background-position: 0 0; /* 초기 위치 설정 */
+            animation: bg 100s linear both;
+            overflow: hidden;
+        }
+        .bg p {animation: ball_move1 2s ease 1 both;}
+        .bg p img {animation: ball_rotate 2s ease 1 both;}
+        .bg h1 img {animation: ball_move2 5s cubic-bezier(0,.88,.23,-0.44) 1 alternate;}
+
+        @keyframes bg {
+            0% {background-position-x: 0;}
+            100% {background-position-x: 200%;}
+        }
+
+
+        @keyframes ball_move1 {
+            0% {transform: translate(0, 0);}
+            30% {transform: translate(500px, 0);}
+            60% {transform: translate(250px, 500px);}
+            100% {transform: translate(0, 0);}
+        }
+
+        @keyframes ball_move2 {
+            0%   {transform: translateX(0);}
+            30% {transform: translateX(300px);}
+            60% {transform: translateX(600px);}
+            100% {transform: translateX(900px);}
+}
+
+        @keyframes ball_rotate {
+            from {transform: rotate(0);}
+            to {transform: rotate(180deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <p>
+        <img src="https://cdn-icons-png.flaticon.com/128/3012/3012458.png" alt="">
+    </p>
+        <h1><img src="https://cdn-icons-png.flaticon.com/128/12909/12909952.png" alt=""></h1>
+        
+    </div>
+</body>
+</html>

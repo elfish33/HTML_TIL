@@ -12,11 +12,14 @@
         main h1 {
             margin:0 auto; font-weight:700; 
             font-size:5rem; text-align: center;
-            background: linear-gradient(to right, #ff00ff, #00ffff, #ff00ff);
+            background-image: linear-gradient(to right, #ff00ff, #00ffff, #ff00ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             color: transparent;
+            background-size: 400%;
+            background-position-x: 0 0;
+            animation: bg-gradient 3s linear infinite;
         }
         main h2 {
             font-family: 'Black Ops One';
@@ -35,8 +38,8 @@
         footer img {width:24px;}
         footer img:nth-child(1) {margin-right:10px;}
         @keyframes bg-gradient {
-            0% {}
-            100% {}
+            0% {background-position-x: 100%}
+            100% {background-position-x: 400}
         }
     </style>
 </head>
